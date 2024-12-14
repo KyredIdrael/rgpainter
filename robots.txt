@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /c
+Disallow: /m
+Disallow: /v/img
+Disallow: /index.php
+Disallow: /v/dashboard.php
+
+Sitemap: https://www.example.com/sitemap.xml
