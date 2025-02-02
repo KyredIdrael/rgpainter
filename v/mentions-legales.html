@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-
 		<!-- Meta -->
-		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-		<meta name="description" content="Découvrez sur cette page les prestations proposées par l'entreprise RG Art en Couleurs. Votre entreprise se déplace sur l'île de france."/>
-		<meta property="og:title" content="Travaux de peinture"/>
-		<meta property="og:description" content="Découvrez sur cette page les prestations proposées par l'entreprise RG Art en Couleurs. Votre entreprise se déplace sur l'île de france."/>
+		<meta name="author" content="Deryk Alves da Silva Leardi Batista" />
+
+		<!-- Shared Links -->
+		<meta property="og:title" content="Mentions Légales"/>
+		<meta property="og:description" content="Consultez les mentions légales de RG Peintures. Retrouvez toutes les informations légales concernant notre entreprise, la gestion du site et les obligations légales en vigueur."/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:image" content="./img/logo/logo-cir.jpg" />
 
+		<!-- SEO -->
+		<title>Mentions Légales</title>
+		<meta name="description" content="Consultez les mentions légales de RG Peintures. Retrouvez toutes les informations légales concernant notre entreprise, la gestion du site et les obligations légales en vigueur."/>
 
-
-		<title>Home</title>
-		<link rel="icon" type="image/x-icon" href="./img/logo.jpg">
-
-
+		<link rel="icon" type="image/x-icon" href="./img/favicon.ico"/>
 
 		<!--	Google Fonts	-->
-		<link rel="stylesheet" type="text/css" href="./css/google-fonts.css">
+		<link rel="stylesheet" type="text/css" href="./css/google-fonts.css"/>
 
 		<!--	Bootstrap	-->
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.min.css"/>
 
 		<!--  JQuery  
-		<script src="./js/jquery-3.7.1.min.js"></script>
+		<script src="./js/jquery/jquery-3.7.1.min.js"></script>
 		-->
 
 		<style type="text/css">
@@ -109,7 +108,7 @@
 			<div class="container-fluid" id="nav-container">
 
 				<!-- Logo -->
-				<a class="navbar-brand ms-5 fs-1" href="index.html">RG Peintures</a>
+				<a class="navbar-brand ms-5 fs-1" href="/v/index.html">RG Peintures</a>
 
 				<!-- Btn Toggle Show/Hide Navbar items-->
 				<button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,19 +119,10 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul class="navbar-nav nav-underline">
 						<li class="nav-item fs-5">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item fs-5 dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Services
-							</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" style="font-size:15px;" href="#">Peinture Interieure</a></li>
-								<li><a class="dropdown-item" style="font-size:15px;" href="#">Peinture Extérieure</a></li>
-							</ul>
+							<a class="nav-link" aria-current="page" href="/v/">Home</a>
 						</li>
 						<li class="nav-item fs-5">
-							<a class="nav-link" href="#">Réalisations</a>
+							<a class="nav-link" href="/v/realisations.html">Réalisations</a>
 						</li>
 						<li class="nav-item fs-5">
 							<a class="nav-link" href="#">Avis</a>
@@ -140,16 +130,25 @@
 						<li class="nav-item fs-5">
 							<a class="nav-link" href="#" id="devisContact">Devis & Contacter</a>
 						</li>
+						<li class="nav-item fs-5 dropdown">
+							<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Plus
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" style="font-size:15px;" href="/v/mentions-legales.html">Mentions Légales</a></li>
+								<li><a class="dropdown-item" style="font-size:15px;" href="/v/">Privacité et Cookies</a></li>
+							</ul>
+						</li>
 						<li class="nav-item fs-5">
 							<select name="" id="" class="border-0 h-100">
 								<option selected>
-									<img src="/img/lang.ico" alt="Language"/>FR
+									FR
 								</option>
 								<option>
-									<img src="/img/lang.ico" alt="Language"/>PT-BR
+									PT-BR
 								</option>
 								<option>
-									<img src="/img/lang.ico" alt="Language"/>EN
+									EN
 								</option>
 							</select>
 						</li>
@@ -163,6 +162,7 @@
 				<div class="row">
 					<div class="col-12">
 						<h1 class="text-center">Mentions Légales</h1>
+						<p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'Économie Numérique (LCEN), il est porté à la connaissance des utilisateurs et visiteurs du site www.rgpainter.com les présentes mentions légales :</p>
 				</div>
 				<section class="row">
 					<div class="col-12">
@@ -243,7 +243,7 @@
 							<li>tout risque de confusion entre le site citant et le propriétaire du site</li>
 							<li>ainsi que toute présentation tendancieuse, ou contraire aux lois en vigueur.</li>
 						</ul>
-						
+
 						<p>Le propriétaire du site se réserve le droit de demander la suppression d’un lien s’il estime que le site source ne respecte pas les règles ainsi définies.</p>
 					</div>
 				</section>
@@ -314,22 +314,22 @@
 		<footer class="w-100 py-3 mb-4 bg-body">
 			<ul class="nav justify-content-center border-bottom pb-3 mb-3">
 				<li class="nav-item">
-					<a href="#" class="nav-link px-2 text-muted">Home</a>
+					<a href="/v/" class="nav-link px-2 text-muted">Home</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link px-2 text-muted">Interieure</a>
+					<a href="/v/realisations.html#Interieure" class="nav-link px-2 text-muted">Interieure</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link px-2 text-muted">Extérieure</a>
+					<a href="/v/realisations.html#Exterieure" class="nav-link px-2 text-muted">Extérieure</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link px-2 text-muted">Réalisations</a>
+					<a href="/v/realisations.html" class="nav-link px-2 text-muted">Réalisations</a>
 				</li>
 				<li class="nav-item">
 					<a href="#" class="nav-link px-2 text-muted">Avis</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link px-2 text-muted">Devis & Contact</a>
+					<a href="/v/form-devis.html" class="nav-link px-2 text-muted">Devis & Contact</a>
 				</li>
 			</ul>
 			<p class="text-center text-muted">© 2005 RG Peintures – <a href="./mentions-legales.html" class="text-muted">Mentions légales</a></p>
@@ -338,7 +338,7 @@
 					rg.arts@rg.com
 				</a>
 				<a class="mx-auto" href="tel:0644767788">
-					0644767788	
+					0644767788
 				</a>
 			</p>
 			<section class="container">
@@ -370,6 +370,6 @@
 		<script type="text/javascript">
 			
 		</script>
-		<script src="./js/bootstrap.bundle.min.js"></script>
+		<script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

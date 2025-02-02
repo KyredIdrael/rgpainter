@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Protest+Revolution&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Kings&family=Knewave&family=Mogra&family=Mr+Dafoe&family=Mystery+Quest&family=Pacifico&family=Ribeye+Marrow&family=Rubik+Glitch&display=swap');
 
 /* <uniquifier>: Use a unique and descriptive class name
  <weight>: Use a value from 400 to 700
@@ -33,6 +33,60 @@
 
 .protest-revolution-regular {
   font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mogra-regular {
+  font-family: "Mogra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aladin-regular {
+  font-family: "Aladin", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ribeye-marrow-regular {
+  font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mr-dafoe-regular {
+  font-family: "Mr Dafoe", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kings-regular {
+  font-family: "Kings", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mystery-quest-regular {
+  font-family: "Mystery Quest", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.knewave-regular {
+  font-family: "Knewave", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", serif;
   font-weight: 400;
   font-style: normal;
 }

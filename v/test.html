@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Test Window</title>
+
+    <link rel="icon" type="image/x-icon" href="/v/img/favicon.ico" />
+
+    <link rel="stylesheet" href="/v/css/default.css">
+
+    <!--	Google Fonts	-->
+    <link rel="stylesheet" type="text/css" href="/v/css/google-fonts.css" />
+
+    <!--	Bootstrap	-->
+    <link rel="stylesheet" type="text/css" href="/v/css/bootstrap/bootstrap.min.css" />
+
+    <!--  JQuery -->
+    <script src="./js/jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body class="lora-regular">
+    <main class="w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="" alt="Dinamic Image" id="DinamicIMG">
+                </div>
+            </div>
+            <div class="row overflow-auto" id="carousel">
+            </div>
+        </div>
+    </main>
+    <script>
+        const row = document.getElementById('carousel');
+
+        let DinamicIMG = document.getElementById('DinamicIMG');
+
+        function getImages(){
+            $.ajax({
+				type: 'GET',
+				url: '../c/get-images.php',
+				success: function(result){
+					console.log(result);
+				},
+				error: function(err){
+					console.log(err);
+				}
+			});
+        }
+
+        function fullRender(images) {
+            jsonArrayObject = JSON.parse(images);
+			jsonArrayObject.forEach(img => {
+                row.appendChild(renderWrapImg(img.path, img.name));
+            });
+        }
+        function renderWrapImg(src, alt){
+            let col = document.createElement('div');
+            let img = document.createElement('img');
+            img.classList.add('get-to-dinamic-img');
+            img.alt = alt;
+            img.src = src;
+            col.classList.add('col-2');
+            col.appendChild(img);
+            return col;
+        }
+        $("img.get-to-dinamic-img").click(function(e){
+            DinamicIMG.src = e.target.src;
+            DinamicIMG.alt = e.target.alt;
+           console.log(e.target.src, e.target.alt, DinamicIMG.alt);
+        });
+    </script>
+    <script src="/v/js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
