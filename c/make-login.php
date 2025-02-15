@@ -1,6 +1,6 @@
 <?php
 /**
- * Pattern Gets
+ * Pattern GET Data
  * login=0 is some empty filds
  * error=0 is incorrect data
  */

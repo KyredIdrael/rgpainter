@@ -34,11 +34,11 @@
 				font-size: 15px;
 				text-align: center;
 			}
-			#devisContact{
+			#devis-contact{
 				border-radius: 5px;
 				border: solid 5px #003c30;
 			}
-			#devisContact:hover{
+			#devis-contact:hover{
 				border: solid 5px  #F7a156;
 			}
 			.fundo{
@@ -104,7 +104,7 @@
 			</div>
 		</header>
 
-		<nav class="navbar navbar-expand-lg bg-white" id="nav-base">
+		<nav class="navbar fixed-top sticky-top navbar-expand-lg bg-white" id="nav-base">
 			<div class="container-fluid" id="nav-container">
 
 				<!-- Logo -->
@@ -119,38 +119,25 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul class="navbar-nav nav-underline">
 						<li class="nav-item fs-5">
-							<a class="nav-link" aria-current="page" href="/v/">Home</a>
+							<a class="nav-link" href="/v/">Home</a>
 						</li>
 						<li class="nav-item fs-5">
 							<a class="nav-link" href="/v/realisations.html">Réalisations</a>
-						</li>
-						<li class="nav-item fs-5">
-							<a class="nav-link" href="#">Avis</a>
-						</li>
-						<li class="nav-item fs-5">
-							<a class="nav-link" href="#" id="devisContact">Devis & Contacter</a>
 						</li>
 						<li class="nav-item fs-5 dropdown">
 							<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Plus
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" style="font-size:15px;" href="/v/mentions-legales.html">Mentions Légales</a></li>
+								<li><a class="dropdown-item" aria-current="page" style="font-size:15px;" href="/v/mentions-legales.html">Mentions Légales</a></li>
 								<li><a class="dropdown-item" style="font-size:15px;" href="/v/">Privacité et Cookies</a></li>
 							</ul>
 						</li>
 						<li class="nav-item fs-5">
-							<select name="" id="" class="border-0 h-100">
-								<option selected>
-									FR
-								</option>
-								<option>
-									PT-BR
-								</option>
-								<option>
-									EN
-								</option>
-							</select>
+							<a class="nav-link" href="#">Avis</a>
+						</li>
+						<li class="nav-item fs-5">
+							<a class="nav-link" href="#" id="devis-contact">Devis & Contacter</a>
 						</li>
 					</ul>
 				</div>

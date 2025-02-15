@@ -31,12 +31,18 @@
                     <img src="" alt="Dinamic Image" id="DinamicIMG">
                 </div>
             </div>
-            <div class="row overflow-auto" id="carousel">
+            <div class="row overflow-auto" id="Exterieur">
+            </div>
+            <div class="row overflow-auto" id="Interieur">
+            </div>
+            <div class="row overflow-auto" id="AParte">
             </div>
         </div>
     </main>
     <script>
-        const row = document.getElementById('carousel');
+        const Exterieur = document.getElementById('Exterieur');
+        const Interieur = document.getElementById('Interieur');
+        const AParte = document.getElementById('AParte');
 
         let DinamicIMG = document.getElementById('DinamicIMG');
 
@@ -56,10 +62,14 @@
         function fullRender(images) {
             jsonArrayObject = JSON.parse(images);
 			jsonArrayObject.forEach(img => {
-                row.appendChild(renderWrapImg(img.path, img.name));
+                if(img.category == "Extérieur") {
+                    row.appendChild(renderWrapImg(img.path, img.name);
+                } else if (img.category == "")
+            });
             });
         }
-        function renderWrapImg(src, alt){
+
+        function renderClikedImg(src, alt){
             let col = document.createElement('div');
             let img = document.createElement('img');
             img.classList.add('get-to-dinamic-img');

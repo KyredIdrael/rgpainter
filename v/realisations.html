@@ -34,11 +34,11 @@
 				font-size: 15px;
 				text-align: center;
 			}
-			#devisContact{
+			#devis-contact{
 				border-radius: 5px;
 				border: solid 5px #003c30;
 			}
-			#devisContact:hover{
+			#devis-contact:hover{
 				border: solid 5px  #F7a156;
 			}
 			.fundo{
@@ -66,11 +66,6 @@
 			.refs:hover{
 				color: red;
 				border: none;
-			}
-			.realised{
-				width: 100%;
-				max-width: 1064px;
-				height: auto;
 			}
 		</style>
 	</head>
@@ -109,7 +104,7 @@
 			</div>
 		</header>
 
-		<nav class="navbar navbar-expand-lg bg-white" id="nav-base">
+		<nav class="navbar fixed-top sticky-top navbar-expand-lg bg-white" id="nav-base">
 			<div class="container-fluid" id="nav-container">
 
 				<!-- Logo -->
@@ -117,17 +112,17 @@
 
 				<!-- Btn Toggle Show/Hide Navbar items-->
 				<button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
 				</button>
 
 				<!-- Container Togglable -->
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul class="navbar-nav nav-underline">
 						<li class="nav-item fs-5">
-							<a class="nav-link" aria-current="page" href="/v/">Home</a>
+							<a class="nav-link" href="/v/">Home</a>
 						</li>
 						<li class="nav-item fs-5">
-							<a class="nav-link active" href="/v/realisations.html">Réalisations</a>
+							<a class="nav-link active" aria-current="page" href="/v/realisations.html">Réalisations</a>
 						</li>
 						<li class="nav-item fs-5 dropdown">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -142,7 +137,7 @@
 							<a class="nav-link" href="#">Avis</a>
 						</li>
 						<li class="nav-item fs-5">
-							<a class="nav-link" href="#" id="devisContact">Devis & Contacter</a>
+							<a class="nav-link" href="#" id="devis-contact">Devis & Contacter</a>
 						</li>
 					</ul>
 				</div>
@@ -157,15 +152,29 @@
 					</div>
 				</div>
 			</div>
-
+			<div class="row">
+				<div class="col-12">
+					<p class="text-center">Faire appel à <b>RG peintures</b> vous assure des résultats professionnels et durables.</p>
+					<div class="w-75 mx-auto">
+						<p>Voici les principaux avantages:</p>
+						<ul>
+							<li>Expertise: Des professionnels qualifiés garantissent des finitions impeccables et soignées.</li>
+							<li>Efficacité: Vous gagnez du temps grâce à leur rapidité et leur efficacité dans les travaux de peinture.</li>
+							<li>Conseils Personnalisés: Ils vous offrent des recommandations sur les couleurs, les types de peintures et les techniques à adopter.</li>
+							<li>Résultats Durables: Les finitions sont esthétiques et résistantes à l'usure ainsi qu'aux intempéries.</li>
+						</ul>
+					</div>
+					<p class="text-center">Choisir notre entreprise de peinture pour vos rénovations, c'est investir dans la qualité, la durabilité et la tranquillité d'esprit.</p>
+				</div>
+			</div>
 			<section class="container">
-				<div class="row bg-primary-subtle">
-					<div class="col-sm-12 col-md-6 " style="display: flex; align-items: center;">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 bg-primary-subtle d-flex align-items-center">
 						<span class="h2 mx-auto" id="Exterieure">Peinture extérieure</span>
 					</div>
 
-					<div class="col-sm-12 col-md-5">
-						<figure><img src="./img/building/realisations/new-england.jpg" alt="Maison peinte à l’extérieur" class="realised"/></figure>
+					<div class="col-sm-12 col-md-6">
+						<img src="./img/building/realisations/new-england.jpg" alt="Maison peinte à l’extérieur" class="img-fluid m-auto"/>
 					</div>
 				</div>
 				<div class="row bg-white">
@@ -174,15 +183,13 @@
 					</div>
 				</div>
 			</section>
-
 			<section class="container">
-				<div class="row bg-secondary-subtle">
-					<div class="col-sm-12 col-md-6" style="display: flex; align-items: center;">
-							<span class="h2 mx-auto">Peinture intérieure</span>
+				<div class="row">
+					<div class="col-sm-12 col-md-6 bg-success-subtle d-flex align-items-center">
+						<span class="h2 mx-auto">Peinture intérieure</span>
 					</div>
-					
-					<div class="col-sm-12 col-md-5">
-					<figure><img src="./img/building/realisations/living-room.jpg" alt="Salle de séjour" class="realised"/></figure>
+					<div class="col-sm-12 col-md-6">
+						<img src="./img/building/realisations/living-room.jpg" alt="Salle de séjour" class="img-fluid m-auto"/>
 					</div>
 				</div>
 				<div class="row bg-white">
@@ -191,44 +198,19 @@
 					</div>
 				</div>
 			</section>
-
-			<section class="container bg-danger-subtle">
+			<section class="container">
 				<div class="row">
-					<div class="col-sm-12 col-md-6" style="display: flex; align-items: center;">
-						<div>
-							<h2 class="text-center">Rénovations</h2>
-							<p class="text-center">Faire appel à RG peintures vous assure des résultats professionnels et durables.</p>
-							<p class="text-center">Voici les principaux avantages:</p>
-							<ul>
-								<li>Expertise: Des professionnels qualifiés garantissent des finitions impeccables et soignées.</li>
-								<li>Efficacité: Vous gagnez du temps grâce à leur rapidité et leur efficacité dans les travaux de peinture.</li>
-								<li>Matériaux de Qualité: Ils utilisent des produits durables et adaptés à vos besoins spécifiques.</li>
-								<li>Sécurité: Les travaux sont gérés de manière sécurisée, avec une assurance pour protéger votre investissement.</li>
-								<li>Conseils Personnalisés: Ils vous offrent des recommandations sur les couleurs, les types de peintures et les techniques à adopter.</li>
-								<li>Résultats Durables: Les finitions sont esthétiques et résistantes à l'usure ainsi qu'aux intempéries.</li>
-							</ul>
-							<p class="text-center">Choisir notre entreprise de peinture pour vos rénovations, c'est investir dans la qualité, la durabilité et la tranquillité d'esprit.</p>
-						</div>
+					<div class="col-sm-12 col-md-6 bg-warning-subtle d-flex align-items-center">
+						<h2 class="h2 mx-auto">Rénovations</h2>
 					</div>
 
-					<div class="col-sm-12 col-md-6">
-					</figure><img src="./img/building/realisations/" alt="Porte rénouvelée(Avant et Après)" class="realised"/></figure>
+					<div class="col-sm-12 col-md-6 d-flex align-items-center">
+						<img src="./img/building/realisations/renovation.jpg" alt="Porte rénouvelée(Avant et Après)" class="img-fluid m-auto"/>
 					</div>
 				</div>
 				<div class="row bg-white">
 					<div class="col-sm-12 col-md-6">
 						<p>carrossel de fotos</p>
-					</div>
-				</div>
-			</section>
-			<section class="container">
-				<div class="row">
-					<div class="col-12">
-
-						<p>Image par <a href="https://pixabay.com/fr/users/midascode-2412635/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1336173">Barry D</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1336173">Pixabay</a></p>
-
-						Photo de <a href="https://unsplash.com/fr/@karaeads?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kara Eads</a> sur <a href="https://unsplash.com/fr/photos/salon-L7EwHkq1B2s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
 					</div>
 				</div>
 			</section>
@@ -258,7 +240,7 @@
 			<p class="text-center text-muted">
 				<a class="mx-auto" href="mailto:rg.arts@rg.com">
 					rg.arts@rg.com
-				</a>
+				</a> - 
 				<a class="mx-auto" href="tel:0644767788">
 					0644767788
 				</a>

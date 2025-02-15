@@ -37,12 +37,12 @@
             text-align: center;
         }
         
-        #devisContact {
+        #devis-contact {
             border-radius: 5px;
             border: solid 5px #003c30;
         }
         
-        #devisContact:hover {
+        #devis-contact:hover {
             border: solid 5px #F7a156;
         }
         
@@ -64,11 +64,14 @@
             height: 24px;
         }
         
-        #homeEntree {
+        #home-intro {
             background-image: url('./img/building/home/living-room.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+            padding: 15% 0 15%;
+        }
+        #why-us{
             padding: 15% 0 15%;
         }
     </style>
@@ -106,7 +109,7 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-white" id="nav-base">
+    <nav class="navbar fixed-top sticky-top navbar-expand-lg bg-white" id="nav-base">
         <div class="container-fluid" id="nav-container">
 
             <!-- Logo -->
@@ -145,7 +148,7 @@
                         <a class="nav-link" href="#">Avis</a>
                     </li>
                     <li class="nav-item fs-5">
-                        <a class="nav-link" href="/v/form-devis.html" id="devisContact">Devis & Contacter</a>
+                        <a class="nav-link" href="/v/form-devis.html" id="devis-contact">Devis & Contacter</a>
                     </li>
                 </ul>
             </div>
@@ -155,13 +158,21 @@
     <main class="w-100">
 
         <div class="container-fluid">
-            <article class="row justify-content-center border-2" id="homeEntree">
+            <article class="row justify-content-center border-2" id="home-intro">
                 <div class="col-sm-11 col-md-6 align-content-center">
                     <div class="w-100 py-3 bg-white bg-opacity-75 text-center rounded-3" style="align-content: center;">
                         <p class="fs-2 text-break">
                             <span class="protest-revolution-regular ">Le rêve devient réalité.<br/>Demandez votre devis gratuit!</span>
-                            <br/><a href="#" class="py-2 px-5 link-dark link-underline-opacity-0 btn btn-success text-white"><span class="fs-5">Devis</span></a>
+                            <br/><a href="#" class="py-2 px-5 link-dark link-underline-opacity-0 btn btn-success text-white"><span class="fs-5">Faire devis maintenant</span></a>
                         </p>
+                    </div>
+                </div>
+            </article>
+            <article class="row justify-content-center border-2 bg-primary-subtle" id="why-us">
+                <div class="col-sm-11 col-md-6 align-content-center">
+                    <div class="w-100 py-3 bg-white bg-opacity-75 text-center rounded-3" style="align-content: center;">
+                        <h3>Pourquoi nous et non "autres"?</h3>
+                        <p>Comme RG Peintures peut être décrite:<br/>Profissional, Excelência, Dedicada, Eficiente, Honesta e Responsavel.<br/>Não é o suficiente? Confira agora nossas realizações! --> <a href="/v/realisations.html">Ver Realizações</a></p>
                     </div>
                 </div>
             </article>
@@ -178,13 +189,13 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 justify-content-center m-auto">
-                    <img src="./img/building/home/house.jpg" alt="Casa pintada por fora" class="h-auto w-100" style="max-width: 100%; object-fit: fill;" />
+                    <img src="./img/building/home/house.jpg" alt="Casa pintada por fora" class="img-fluid"/>
                 </div>
             </article>
 
             <article class="row border-top border-1 border-black my-3 pt-3">
                 <div class="col-sm-12 col-md-6 justify-content-center m-auto">
-                    <img src="./img/building/home/empty-room.jpg" alt="Casa pintada por dentro" class="h-auto w-100" />
+                    <img src="./img/building/home/empty-room.jpg" alt="Casa pintada por dentro" class="img-fluid" />
                 </div>
                 <div class="col-sm-12 col-md-6" style="display: flex; align-items: center;">
                     <div>
@@ -240,6 +251,9 @@
             <li class="nav-item">
                 <a href="/v/form-devis.html" class="nav-link px-2 text-muted">Devis & Contact</a>
             </li>
+            <li class="nav-item">
+                <a href="/v/form-login.html" class="nav-link px-2 text-muted">ADM</a>
+            </li>
         </ul>
         <p class="text-center text-muted">© 2005 RG Peintures – <a href="/v/mentions-legales.html" class="text-muted">Mentions légales</a></p>
 
@@ -279,6 +293,7 @@
 
     <script type="text/javascript">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 

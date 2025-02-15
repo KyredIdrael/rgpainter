@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Shared Links -->
+    <meta property="og:title" content="Travaux de peinture" />
+    <meta property="og:description" content="Découvrez sur cette page les prestations proposées par l'entreprise RG Art en Couleurs. Votre entreprise se déplace sur l'île de france." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/logo/logo-cir.jpg" />
+
+    <!-- SEO -->
+    <title>Home</title>
+    <meta name="description" content="Découvrez sur cette page les prestations proposées par l'entreprise RG Art en Couleurs. Votre entreprise se déplace sur l'île de france." />
+    <meta name="keywords" content="Peinture, Rénovation, Entreprise peinture">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Deryk Alves da Silva Leardi Batista" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/default.css">
+    <!--	Google Fonts	-->
+    <link rel="stylesheet" type="text/css" href="./css/google-fonts.css">
+
+    <!--	Bootstrap	-->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.min.css">
+
+    <!--  JQuery  -->
+    <script src="./js/jquery/jquery-3.7.1.min.js"></script>
+
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        $(window).ready(function () {
+            let imgId = getRandomNumber(0, 7);
+            switch(imgId){
+                case 0:
+                    document.body.style.backgroundImage = "url('./img/login/guernica.jpg')";
+                break;
+
+                case 1:
+                    document.body.style.backgroundImage = "url('./img/login/disputa-do-santissimo-sacramento.jpg')";
+                break;
+
+                case 2:
+                    document.body.style.backgroundImage = "url('./img/login/david.jpg')";
+                break;
+
+                case 3:
+                document.body.style.backgroundImage = "url('./img/login/homem-virtruviano.jpg')";
+                break;
+
+                case 4:
+                    document.body.style.backgroundImage = "url('./img/login/donatello.jpg')";
+                break;
+
+                case 5:
+                    document.body.style.backgroundImage = "url('./img/login/a-ultima-ceia.png')";
+                break;
+
+                default:
+                    document.body.style.backgroundImage = "url('./img/login/homem-virtruviano.jpg')";
+                break;
+            }
+        });
+    </script>
+
+    <style type="text/css">
+        body{
+            background-color: black;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .menuLogin{
+            max-width: 512px;
+            width: calc(90% - 64px);
+            min-width: 256px;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin-top: 50px;
+            margin-bottom: 128px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 24px;
+            padding-top: 2%;
+            padding-bottom: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="w-100 my-auto">
+        <div class="menuLogin text-center">
+            <form action="rgpainter.ky/c/make-login.php" method="POST">
+                <div class="mb-5">
+                    <a class="text-center fs-1 link-underline link-underline-opacity-0" href="index.html">
+                        <h1 class="h1 text-black">RG Peintures</h1>
+                    </a>
+                </div>
+                <div class="mb-5">
+                    <label for="User" class="form-label">User</label>
+                    <input name="user" type="text" class="form-control" id="User" required/>
+                </div>
+                <div class="mb-3">
+                    <label for="PW" class="form-label">Password</label>
+                    <input name="pw" type="password" class="form-control" id="PW" required/>
+                    <span class="form-text d-none">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</span>
+                </div>
+                <div class="mb-5">
+                    <input type="checkbox" class="form-check-input" id="ShowPW"/>
+                    <label for="ShowPW" class="form-check-label">Show Passoword</label>
+                </div>
+                <button type="submit" class="px-5 py-2">Log In</button>
+            </form>
+        </div>
+    </div>
+    <footer class="w-100 py-4 bg-body">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a href="/v/" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/v/realisations.html#Interieure" class="nav-link px-2 text-muted">Interieure</a>
+            </li>
+            <li class="nav-item">
+                <a href="/v/realisations.html#Exterieure" class="nav-link px-2 text-muted">Extérieure</a>
+            </li>
+            <li class="nav-item">
+                <a href="/v/realisations.html" class="nav-link px-2 text-muted">Réalisations</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Avis</a>
+            </li>
+            <li class="nav-item">
+                <a href="./v/form-devis.html" class="nav-link px-2 text-muted">Devis & Contact</a>
+            </li>
+        </ul>
+        <p class="text-center text-muted">© 2005 RG Peintures – <a href="./mentions-legales.html" class="text-muted">Mentions légales</a></p>
+        <p class="text-center">
+            <a class="mx-auto text-muted" href="mailto:rg.arts@rg.com">
+                rg.arts@rg.com
+            </a>&nbsp;
+            <a class="mx-auto text-muted" href="tel:0644767788">
+                0644767788
+            </a>
+        </p>
+    </footer>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
